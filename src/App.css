@@ -1,0 +1,113 @@
+.main {
+  background-color: rgb(243, 249, 249);
+  margin: auto;
+  width: 60%;
+  box-shadow: 2px 2px 2px 2px #888888;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.photo {
+  height: 140px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.content-left-border {
+  border-color: rgb(229, 233, 237);
+  border-bottom-style: solid;
+  border-width: 2px;
+  width: 50%;
+  text-align: left;
+  margin-left: 0;
+}
+
+.body-page {
+  display: flex;
+  border-color: #1f2937;
+  border-top: solid;
+  border-width: 1px;
+  margin-top: 20px;
+}
+
+.page-left {
+  height: auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  gap: 10px;
+}
+
+.page-right {
+  background-color: #eae7da;
+  background-color: #e6e6e6;
+  text-align: center;
+  flex: 1;
+  padding: 1rem;
+}
+
+.experience-container {
+  border-style: solid;
+  border-color: #1f2937;
+  border-width: 1px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.experience-container-list {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-container-list-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-right-languages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 120px;
+}
+
+.education-list {
+  display: flex;
+  justify-content: center;
+}
+
+.education-list-text {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
