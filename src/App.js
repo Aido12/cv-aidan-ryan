@@ -5,7 +5,9 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import React from 'react';
 import cvphoto from './cvphoto.jpg';
+import { array } from './expierenceData';
 
+console.log();
 function App() {
   return (
     <div className="main">
@@ -19,80 +21,64 @@ function App() {
         </div>
         <div>
           <ul className="contact-list">
-            <li>
-              <PhoneIcon /> +43 650 4732801
-            </li>
-            <li>
-              <EmailIcon />
-              <a
-                href="mailto: aidoryan@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                aidoryan@gmail.com
-              </a>
-            </li>
-            <li>
-              <LinkedInIcon />
-              <a
-                href="//www.linkedin.com/in/aido-ryan"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/in/aido-ryan
-              </a>
-            </li>
-            <li>
-              <LocationOnIcon />
-              Vienna, Austria
-            </li>
+            <div>
+              <li>
+                <PhoneIcon fontSize="small" /> &nbsp;+43 650 4732801
+              </li>
+              <li>
+                <EmailIcon fontSize="small" />
+                <a
+                  href="mailto: aidoryan@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-list-text"
+                >
+                  &nbsp; aidoryan@gmail.com
+                </a>
+              </li>
+              <li>
+                <LinkedInIcon fontSize="small" />
+                <a
+                  href="//www.linkedin.com/in/aido-ryan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-list-text"
+                >
+                  &nbsp; linkedin.com/in/aido-ryan
+                </a>
+              </li>
+              <li>
+                <LocationOnIcon fontSize="small" />
+                &nbsp; Vienna, Austria
+              </li>
+            </div>
           </ul>
         </div>
       </div>
       <main class="body-page">
         <div class="page-left">
           <h2>EXPERIENCE</h2>
-          <div className="experience-container">
-            <h3>Junior Web Developer / Graduate</h3>
-            <p>
-              Brainnest Frontend Development Industry Training
-              <br />
-              09/2022 - 10/2022
-              <ul className="experience-container-list">
-                <div className="experience-container-list-text">
-                  <li>HTML, CSS, JavaScript</li>
-                  <li>Projects available on GitHub</li>
-                  <li>https://github.com/Aido12</li>
-                </div>
-              </ul>
-            </p>
-          </div>
-          <div className="experience-container">
-            <h3>Junior Web Developer / Graduate</h3>
-            <p>
-              Brainnest Frontend Development Industry Training
-              <br />
-              09/2022 - 10/2022
-              <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Projects available on GitHub</li>
-                <li>https://github.com/Aido12</li>
-              </ul>
-            </p>
-          </div>
-          <div className="experience-container">
-            <h3>Junior Web Developer / Graduate</h3>
-            <p>
-              Brainnest Frontend Development Industry Training
-              <br />
-              09/2022 - 10/2022
-              <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Projects available on GitHub</li>
-                <li>https://github.com/Aido12</li>
-              </ul>
-            </p>
-          </div>
+          {array.map((item, index) => {
+            return (
+              <div key={index} className="experience-container">
+                <h3>{item.title}</h3>
+                <p>
+                  {item.company}
+                  <br />
+                  {item.date}
+                  <ul className="experience-container-list">
+                    <div className="experience-container-list-text">
+                      <li>{item.skill1}</li>
+                      <li>{item.skill2}</li>
+                      <li>{item.skill3}</li>
+                      <li>{item.skill4 || ''}</li>
+                      <li>{item.skill5}</li>
+                    </div>
+                  </ul>
+                </p>
+              </div>
+            );
+          })}
         </div>
         <div class="page-right">
           <h2>SUMMARY</h2>

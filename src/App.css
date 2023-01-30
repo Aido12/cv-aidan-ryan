@@ -15,13 +15,18 @@
 }
 
 .photo {
-  height: 140px;
-  width: 120px;
-  border-radius: 50%;
+  height: 150px;
+  width: 130px;
+  border-radius: 100%;
 }
 
 .contact-list {
   list-style: none;
+}
+
+.contact-list-text {
+  text-decoration: none;
+  color: black;
 }
 
 .main-text {
