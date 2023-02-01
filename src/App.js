@@ -16,7 +16,7 @@ function App() {
           <img src={cvphoto} alt="cover" className="photo" />
           <div>
             <h1>Aidan Ryan</h1>
-            <h3>Web Developer</h3>
+            <h3 className="job-title">Web Developer</h3>
           </div>
         </div>
         <div>
@@ -65,7 +65,7 @@ function App() {
                 <p>
                   {item.company}
                   <br />
-                  {item.date}
+                  <div className="exp-date">{item.date}</div>
                   <ul className="experience-container-list">
                     <div className="experience-container-list-text">
                       <li>{item.skill1}</li>
@@ -94,26 +94,31 @@ function App() {
           </p>
           <h2>SKILLS</h2>
           <h4>TECHSKILLS</h4>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>TypeScipt, React, Next.js</li>
-            <li>PostgresSQL, Node.js</li>
-            <li>Git, GitHub</li>
-            <li>WordPress</li>
+          <ul className="skills-container-list">
+            <div className="skills-container-list-text">
+              <li>HTML, CSS, JavaScript</li>
+              <li>TypeScipt, React, Next.js</li>
+              <li>PostgresSQL, Node.js</li>
+              <li>Git, GitHub</li>
+              <li>WordPress</li>
+            </div>
           </ul>
+
           <h4>SOFTSKILLS</h4>
-          <ul>
-            <li> Ability to work in a team</li>
-            <li>Communication</li>
-            <li>Decision making</li>
-            <li> Stress management</li>
+          <ul className="skills-container-list">
+            <div className="skills-container-list-text">
+              <li> Ability to work in a team</li>
+              <li>Communication</li>
+              <li>Decision making</li>
+              <li> Stress management</li>
+            </div>
           </ul>
           <h4>LANGUAGES</h4>
           <div className="page-right-languages">
             <p>
               English <br /> German(b1)
             </p>
-            <p>
+            <p className="exp-date">
               Native <br />
               Intermediate
             </p>
@@ -123,14 +128,14 @@ function App() {
             <ul className="education-list">
               <div className="education-list-text">
                 <li>Ibis Acam Wien</li>
-                <li>2022</li>
+                <li className="exp-date">2022</li>
                 <li>B1 Intensiv Deutsch Sprachkurs</li>
               </div>
             </ul>
             <ul className="education-list">
               <div className="education-list-text">
                 <li>St Davids CBS, Artane, Dublin, Ireland</li>
-                <li>1999</li>
+                <li className="exp-date">1999</li>
                 <li>Leaving Certifcate(Matura)</li>
               </div>
             </ul>
