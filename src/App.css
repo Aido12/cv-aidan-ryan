@@ -75,7 +75,6 @@
 }
 
 .page-right {
-  background-color: #eae7da;
   background-color: #e6e6e6;
   text-align: center;
   flex: 1;
@@ -145,31 +144,27 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
 }
 
 @media screen and (max-width: 600px) {
   .main {
-    width: 100%;
+    width: 86%;
     margin-top: 10px;
   }
+
   .heading {
     display: flex;
     flex-direction: column;
   }
+
   .photo {
     height: 90px;
     width: 70px;
   }
+
   .body-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .page-right {
-    /* margin-right: 160px; */
-  }
-  .page-left {
-    /* margin-right: 160px; */
   }
 }
