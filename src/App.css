@@ -132,8 +132,8 @@
 .education {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-left: 120px;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .education-list {
@@ -145,5 +145,23 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contact-list {
+    color: aqua;
+    margin-right: 20px;
+  }
+  .page-right {
+    /* margin-right: 200px; */
+  }
+  .education {
+    /* padding-left: 42px;
+    padding-right: 52px; */
+  }
 }
