@@ -3,7 +3,7 @@ export const array = [
     id: '1',
     title: 'Junior Web Developer / Graduate',
     company: 'Brainnest Frontend Development Industry Training',
-    date: '09/2022 - 10/2022',
+    date: '10/2022 - 11/2022',
     skill1: '• HTML, CSS, JavaScript',
     skill2: '• Projects available on GitHub',
     skill3: (

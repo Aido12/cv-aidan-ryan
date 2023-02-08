@@ -92,7 +92,7 @@ function App() {
             I have since completed a Front-End Development course and I am also
             working with WordPress and plugins such as Elemetor and WooCommerce.
           </p>
-          <h2>SKILLS</h2>
+          <h3>SKILLS</h3>
           <h4>TECHSKILLS</h4>
           <ul className="skills-container-list">
             <div className="skills-container-list-text">
@@ -113,7 +113,7 @@ function App() {
               <li> Stress management</li>
             </div>
           </ul>
-          <h4>LANGUAGES</h4>
+          <h3>LANGUAGES</h3>
           <div className="page-right-languages">
             <p>
               English <br /> German(b1)
@@ -123,7 +123,7 @@ function App() {
               Intermediate
             </p>
           </div>
-          <h4>EDUCATION</h4>
+          <h3>EDUCATION</h3>
           <div className="education">
             <ul className="education-list">
               <div className="education-list-text">

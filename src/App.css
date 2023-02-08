@@ -2,6 +2,7 @@
   background-color: rgb(243, 249, 249);
   margin: auto;
   width: 60%;
+  height: 20%;
   box-shadow: 2px 2px 2px 2px #888888;
   padding: 30px;
   margin-top: 20px;
@@ -48,6 +49,7 @@
 
 .content-left-border {
   border-color: rgb(229, 233, 237);
+
   border-bottom-style: solid;
   border-width: 2px;
   width: 50%;
@@ -66,7 +68,8 @@
 .page-left {
   height: auto;
   text-align: center;
-  background-color: #f9f9f9;
+
+  background-color: rgb(243, 249, 249);
   flex: 1;
   padding: 1rem;
   display: flex;
@@ -82,6 +85,7 @@
 }
 
 .experience-container {
+  background-color: #f9f9f9;
   border-style: solid;
   border-color: #1f2937;
   border-width: 1px;
